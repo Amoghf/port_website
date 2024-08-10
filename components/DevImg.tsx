@@ -1,11 +1,18 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react"; // Make sure to import React if you're using TypeScript with JSX
 
-const DevImg = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+// Define the types for the props
+interface DevImgProps {
+  containerStyles?: string; // containerStyles is optional
+  imgSrc: string;           // imgSrc is required
 }
 
-export default DevImg
+const DevImg: React.FC<DevImgProps> = ({ containerStyles = "", imgSrc }) => {
+  return (
+    <div className={containerStyles}>
+      <Image src={imgSrc} fill priority alt="" />
+    </div>
+  );
+};
+
+export default DevImg;

@@ -40,6 +40,8 @@ const Header: React.FC = () => {
             />
                   <ThemeToggler />
             <div className="xl:hidden">
+
+              
                   <MobileNav />
             </  div>
           </div>

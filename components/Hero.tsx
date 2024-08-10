@@ -1,3 +1,5 @@
+
+
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ArrowUpRightFromSquareIcon, Download, Send } from "lucide-react";
@@ -7,6 +9,7 @@ import { RiBriefcase4Fill, RiTeamFill, RiTodoFill, RiArrowDownSLine } from 'reac
 import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
+
 
 const Hero = () => {
   return (
@@ -37,11 +40,43 @@ const Hero = () => {
                 Download CV <Download size={18} />
               </Button>
             </div>
+
+            {/* socials */}
+            <div className="mt-8 flex justify-center">
+              <Socials containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              iconsStyles="text-foreground text-[22px] hover:text-primary transition-all" />
+            </div>
           </div>
 
           {/* {image} */}
           <div className="hidden xl:flex relative">
-            Image
+
+            {/* badge 1*/}
+            <Badge
+            containerStyles="absolute top-[24%] -left-[5rem]"
+            icon={<RiBriefcase4Fill/>}  endCountNum={3} badgeText="Month of Exp" />
+
+            <Badge
+            containerStyles="absolute top-[80%] -left-[1rem]"
+            icon={<RiTodoFill/>} 
+             endCountNum={12} 
+             endCountText="+"
+             badgeText="Finished Projects" />
+
+            <Badge
+            containerStyles="absolute top-[55%] -right-8"
+            icon={<RiTeamFill/>} 
+             endCountNum={500} 
+             endCountText="+"
+             badgeText="Linked In Connections" />
+
+
+
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px]
+            h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+            <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom" 
+            imgSrc="/hero/developer1.png"/>
+            
           </div>
         </div>
 
