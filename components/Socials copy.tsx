@@ -7,11 +7,11 @@ const icons = [
     name: <RiYoutubeFill />,
   },
   {
-    path: 'https://www.linkedin.com/in/amogh-firke-912762239/', 
+    path: 'https://www.linkedin.com/', 
     name: <RiLinkedinFill />,
   },
   {
-    path: 'https://github.com/Amoghf', 
+    path: 'https://github.com/', 
     name: <RiGithubFill />,
   },
   {

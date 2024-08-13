@@ -23,11 +23,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={outfit.className}>
+      <body className={`${outfit.className} h-full`}>
         <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          {children}
-          <Footer />
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

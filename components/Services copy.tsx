@@ -32,12 +32,9 @@ const Services = () => {
   return (
     <section className="mb-12 xl:mb-36">
       <div className="container mx-auto">
-      <h2
-  className="section-title mb-8 xl:mb-16 text-center mx-auto"
-  style={{ fontSize: "2.5rem", fontWeight: "bold", lineHeight: "1.2" }}
->
-  My Services
-</h2>
+        <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
+          My Services
+        </h2>
 
         {/* grid */}
         <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">

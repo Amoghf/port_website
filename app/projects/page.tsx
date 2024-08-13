@@ -3,49 +3,57 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsContent, TabsTrigger } from '@radix-ui/react-tabs';
 import ProjectCard from '@/components/ProjectCard';
-
 const projectData = [
   {
-    image: '/work/3.png',
-    category: 'WEB_DEV',
-    name: 'Nexa Website',
-    description: 'A responsive and user-friendly website for Nexa, focusing on modern web technologies.',
-    link: '/',
-    github: '/',
+      image: '/work/1.png',
+      category: 'WEB_DEV',
+      name: 'Portfolio Website',
+      description: "Built a dynamic portfolio site using Next.js, Framer Motion, and TypeScript, with interactive features and responsive design.",
+      link: 'https://github.com/Amoghf/port_website.git',
+      github: 'https://github.com/Amoghf/port_website.git',
   },
   {
-    image: '/work/3.png',
-    category: 'WEB_DEV',
-    name: 'E-commerce Platform',
-    description: 'An e-commerce website with modern features and a user-friendly interface.',
-    link: '/',
-    github: '/',
+      image: '/work/2.png',
+      category: 'WEB_DEV',
+      name: 'Finance Banking App',
+      description: "Developed a banking app clone with Plaid API for fund transfers and Sentry API for error tracking.",
+      link: 'https://github.com/Amoghf/fintech.git',
+      github: 'https://github.com/Amoghf/fintech.git',
   },
   {
-    image: '/work/3.png',
-    category: 'Java',
-    name: 'Spring Boot Application',
-    description: 'Developed a robust backend using Spring Boot to manage complex data structures.',
-    link: '/',
-    github: '/',
+      image: '/work/3.png',
+      category: 'Other',
+      name: 'Criminal Management System',
+      description: "Created a robust criminal management system using Spring Boot and SQL for efficient data handling.",
+      link: 'https://github.com/Amoghf/Criminal-Management-System.git',
+      github: 'https://github.com/Amoghf/Criminal-Management-System.git',
   },
   {
-    image: '/work/3.png',
-    category: 'Java',
-    name: 'Spring Boot Microservices',
-    description: 'Implemented microservices architecture using Spring Boot for scalable applications.',
-    link: '/',
-    github: '/',
+      image: '/work/4.png',
+      category: 'Java',
+      name: 'Spring Boot Bus Reservation',
+      description: "Implemented a scalable bus reservation system with Spring Boot, using advanced Java design patterns to enhance maintainability and reduce development time.",
+      link: 'https://github.com/Amoghf/Bus-Reservation-System-.git',
+      github: 'https://github.com/Amoghf/Bus-Reservation-System-.git',
   },
   {
-    image: '/work/3.png',
-    category: 'Other',
-    name: 'Utility Script',
-    description: 'Created a versatile utility script to automate daily tasks, increasing productivity.',
-    link: '/',
-    github: '/',
+      image: '/work/5.png',
+      category: 'Other',
+      name: 'Key-Value Database Pair Utility',
+      description: "Developed a utility for managing key-value data pairs efficiently, improving data handling and performance.",
+      link: 'https://github.com/Amoghf/Cloud_Key_Value_Pair_3.git',
+      github: 'https://github.com/Amoghf/Cloud_Key_Value_Pair_3.git',
   },
+  {
+      image: '/work/6.png',
+      category: 'Other',
+      name: 'Olympic Tokyo 2020 Data Analysis',
+      description: "Built an interactive data analysis app using Streamlit and Python, with advanced visualizations and scalable user access.",
+      link: 'https://github.com/Amoghf/Olympic_Data_Analysis.git',
+      github: 'https://github.com/Amoghf/Olympic_Data_Analysis.git',
+  }
 ];
+
 
 const uniqueCategories = [
   'all projects',
