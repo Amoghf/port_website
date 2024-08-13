@@ -1,12 +1,12 @@
 'use client'
 
-import Link from "next/link"
-import { Button } from "./ui/button"
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import { Pagination } from 'swiper/modules'
-import ProjectCard from "./ProjectCard"
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import ProjectCard from "./ProjectCard";
 
 const projectData = [
     {
@@ -96,7 +96,7 @@ const Work = () => {
             </div>
         </div>
     </section>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
