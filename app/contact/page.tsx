@@ -13,9 +13,9 @@ const Contact = () => {
               <div>Say Hello</div>
             </div>
 
-            <h1 className="text-3xl font-bold max-w-md mb-6">Let's Work Together</h1>
+            <h1 className="text-3xl font-bold max-w-md mb-6">Let&rsquo;s Work Together</h1>
             <p className="text-lg max-w-md mx-auto lg:mx-0">
-              I would love to hear from you! Whether you have a project in mind, a question, or just want to connect, feel free to reach out. Let’s create something amazing together.
+              I would love to hear from you! Whether you have a project in mind, a question, or just want to connect, feel free to reach out. Let&rsquo;s create something amazing together.
             </p>
           </div>
 
